@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+   
+    <script src="jquery.cloud9carousel.js"></script>
+    <style>
+        #cloud9 {
+            overflow: visible !important;
+            height: 170px;
+            margin-top: 20px;
+        }
+
+        .cloud9-item {
+            filter: drop-shadow(0 4px 6px #666);
+            cursor: pointer;
+        }
+
+        .box {
+            height: 200px;
+            width: 200px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div id="cloud9" class="carousel">
+        <div style="background-color: aqua" class="box cloud9-item carousel-item"></div>
+        <!-- Элементы карусели -->
+        <div style="background-color: rebeccapurple" class="box cloud9-item carousel-item"></div>
+        <div style="background-color: fuchsia" class="box cloud9-item carousel-item"></div>
+        <div style="background-color: darkblue" class="box cloud9-item carousel-item"></div>
+    </div>
+
+    
+    <script>
+        $(function() {
+            $("#cloud9").Cloud9Carousel({
+                bringToFront: true
+            });
+        })
+    </script>
+</body></html>
